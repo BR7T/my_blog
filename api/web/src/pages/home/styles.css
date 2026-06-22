@@ -1,0 +1,91 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    height: 100dvh;
+}
+
+#CenterMain{
+    font-family: "Nauryz";
+    font-size: 40px;
+    display: flex;
+
+    gap: 10px;
+
+    h4{
+        display: flex;
+        justify-content: right;
+    }
+}
+#NameDiv{
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+#LinksDiv{
+    width: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    & a{
+        font-weight: 500;
+        border: none;
+        font-size: 24px;
+        padding: 0px 2px;
+        cursor: pointer;
+        background-color: transparent;
+        opacity: 1;
+        transition: opacity 0.3s, color 0.3s;
+        
+    }
+    &:has(a:hover) a{
+        opacity: 0.3;
+    }
+    & .buttonPages:hover{
+        opacity: 1;
+    }
+}
+
+#SocialMedias{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+svg{
+    width: 28px;
+}
+#instagram{fill:#FF0069;}
+#github{fill:#181717;}
+#linkedin{fill:#0A66C2;}
+
+#Pages{
+    width: 740px;
+    padding: 1rem 2rem;
+    border: 1px solid black;
+    font-family: "Cascadia";
+}
+#Pages>h3{
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+}
+.Post:not(:last-child){
+    margin-bottom: 1rem;
+}
+.Post{
+    display: flex;
+    gap: 1rem;
+    user-select: none;
+    cursor: pointer;
+}

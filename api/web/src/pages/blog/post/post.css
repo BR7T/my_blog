@@ -1,0 +1,106 @@
+header{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+header p{
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    gap: 1rem;
+    height: 6rem;
+    align-items: center;
+    justify-content: center;
+}
+footer a{
+    padding: 4px;
+    cursor: pointer;
+}
+
+#linkedin{
+    background-color: #0A66C2;
+    color: white;
+}
+#github{
+    background-color: #181717;
+    color: white;
+}
+#instagram{
+    background-color:#FF0069 ;
+    color: white;
+}
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ContentPost{
+    border: 2px solid black;
+    width: 740px;
+    padding: 2rem 3rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    position: relative;
+}
+
+
+.titlePost{
+    font-size: 36px;
+    position: relative;
+    font-family: 'Funnel';
+    .subtitle{
+        font-size: 1rem;
+        font-family: "Cascadia";
+    }
+}
+.dateField{
+    font-size: 22px;
+}
+
+.ContentPost .textArea{
+    font-size: 18px;
+    h1{
+        font-size: 25px;
+    }
+}
+
+.hr{
+    margin: 2rem 0;
+    border-color: #cecece;
+    width: 50%;
+    margin: 2rem auto;
+    border-style: solid;
+}
+
+.img-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:2rem 0;
+    position: relative;
+    img{
+        max-width: 100%;
+    }
+}
+
+.textArea p{
+    text-indent: 2em;
+    line-height: 1.7;
+    margin-bottom: 1.2rem;
+    font-family: "Cascadia";
+    letter-spacing: normal;
+}
+
+.span{
+    background-color: yellow;
+}

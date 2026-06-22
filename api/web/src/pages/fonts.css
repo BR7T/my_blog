@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Nauryz */
+@font-face {
+    font-family: "Nauryz";
+    src: url(/fonts/nauryz_red_keds/nauryzredkeds.ttf);
+}
+/* Funnel */
+@font-face {
+    font-family: "Funnel";
+    src: url(/fonts/funnel_display/FunnelDisplay-VariableFont_wght.ttf);
+}
+/* Cascadia */
+@font-face {
+    font-family: "Cascadia";
+    src: url(/fonts/Cascadia_Code/CascadiaCode-VariableFont_wght.ttf);
+}
+
+
+.Nauryz{
+    font-family: "Nauryz";
+}
+.Funnel{
+    font-family: "Funnel";
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.Underline{
+    text-decoration: underline;
+}
