@@ -31,6 +31,9 @@ function CreatePage(obj){
   let dateTimeE = document.createElement("p")
   titleE.innerHTML = obj.Title
   dateTimeE.innerHTML = FormatDate(obj.CreatedAt)
+  if(obj.UpdatedAt){
+    dateTimeE.innerHTML += `- <span style="font-size:15px">(Editado)${FormatDate(obj.UpdatedAt)}</span>`
+  }
   dateTimeE.classList.add("dateField")
   titleDiv.appendChild(titleE)
   titleDiv.appendChild(dateTimeE)
