@@ -59,8 +59,12 @@ body{
 
 footer{
     position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
     bottom: 20px;
     left: 20px;
+    gap: 15%;
 }
 
 svg{

@@ -27,7 +27,7 @@ let textDiv = document.querySelector(".textArea")
 
 function CreatePage(obj){
   let titleE = document.createElement("h2")
-  document.title = obj.Title
+  document.title = `${obj.Title} | BR7T`
   let dateTimeE = document.createElement("p")
   titleE.innerHTML = obj.Title
   dateTimeE.innerHTML = FormatDate(obj.CreatedAt)

@@ -36,3 +36,13 @@ a{
 .Underline{
     text-decoration: underline;
 }
+
+.ko-fi{
+    padding: 10px;
+    border: 1px solid black;
+    transition: .3s ease;
+}
+.ko-fi:hover{
+    background-color:black;
+    color: white;
+}
