@@ -10,18 +10,20 @@ import (
 )
 
 func main() {
-      log.Println("✅ Aplicação iniciada")
+    log.Println("✅ Aplicação iniciada")
     log.Println("Porta:", os.Getenv("PORT"))
-    s , _ :=os.Getwd()
+    s, _ := os.Getwd()
     log.Println("Diretório atual:", s)
-  err := godotenv.Load()
-  if err != nil{
-	  return
-  }
-  router := gin.Default() 
-  
-  endpoints.WebEndpoint(router)
-  endpoints.PostEndpoint(router)
-
-  router.Run()
+    
+    // Tenta carregar .env, mas não falha se não existir
+    _ = godotenv.Load()
+    log.Println("✅ Variáveis de ambiente carregadas")
+    
+    router := gin.Default() 
+    
+    endpoints.WebEndpoint(router)
+    endpoints.PostEndpoint(router)
+    
+    log.Println("🚀 Iniciando servidor...")
+    router.Run()
 }
